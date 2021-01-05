@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeetingFooterViewWall" customModule="My_Wall" customModuleProvider="target">
+            <connections>
+                <outlet property="cancel" destination="lCP-dO-KYv" id="LgD-5g-fYm"/>
+                <outlet property="save" destination="SGi-5O-gsE" id="lpl-d4-FLp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="oC3-O8-wxh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9Fj-oj-Hnd">
+                    <rect key="frame" x="50" y="20" width="314" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCP-dO-KYv" customClass="CustomButton" customModule="My_Wall" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                            <state key="normal" title="CANCEL"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="customBGColor">
+                                    <color key="value" red="0.1529411765" green="0.1960784314" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGi-5O-gsE" customClass="CustomButton" customModule="My_Wall" customModuleProvider="target">
+                            <rect key="frame" x="167" y="0.0" width="147" height="50"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Save"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="customBGColor">
+                                    <color key="value" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="sS6-R3-IHG"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.88327312469999997" green="0.89063835140000003" blue="0.90062731500000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9Fj-oj-Hnd" secondAttribute="bottom" constant="10" id="2UN-zw-8tQ"/>
+                <constraint firstAttribute="trailing" secondItem="9Fj-oj-Hnd" secondAttribute="trailing" constant="50" id="2iS-Ei-Ep7"/>
+                <constraint firstItem="9Fj-oj-Hnd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="Ext-5x-IxL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="76"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="SGi-5O-gsE">
+            <size key="intrinsicContentSize" width="36" height="30"/>
+        </designable>
+        <designable name="lCP-dO-KYv">
+            <size key="intrinsicContentSize" width="63" height="30"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,80 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - DeviceKit (1.13.0)
+  - DynamicBlurView (4.1.0)
+  - HSPopupMenu (0.1.1):
+    - SnapKit (~> 4.0.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - M13Checkbox (3.4.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
+  - SideMenuSwift (2.0.6)
+  - SnapKit (4.0.1)
+  - Toast-Swift (5.0.1)
+  - YYCalendar (1.3.3)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - Charts
+  - DeviceKit (~> 1.13.0)
+  - HSPopupMenu
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - M13Checkbox
+  - NVActivityIndicatorView
+  - PopupDialog (~> 1.1)
+  - SDWebImage
+  - SideMenuSwift
+  - Toast-Swift (~> 5.0.1)
+  - YYCalendar
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - DeviceKit
+    - DynamicBlurView
+    - HSPopupMenu
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - M13Checkbox
+    - NVActivityIndicatorView
+    - PopupDialog
+    - SDWebImage
+    - SideMenuSwift
+    - SnapKit
+    - Toast-Swift
+    - YYCalendar
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  DeviceKit: 5a4accdb2918ce0b69e62dc3bef6e4d2cc06e2e4
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  HSPopupMenu: ca8c0f872cdbc8fc7d9c8098c2aa6e6a0027d201
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SideMenuSwift: f12ca1b11faad909bfc2878df37e0a1c40fa4570
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  YYCalendar: 1a6bbbd2190392edf9209da898b029ce4e5e734b
+
+PODFILE CHECKSUM: 74c982c3d176493cd6e4737775a0e714f3e11391
+
+COCOAPODS: 1.10.0

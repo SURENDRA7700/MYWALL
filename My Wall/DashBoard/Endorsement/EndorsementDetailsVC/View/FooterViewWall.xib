@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FooterViewWall" customModule="My_Wall" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonHeightConst" destination="6xt-QQ-69o" id="tn3-Ck-fHv"/>
+                <outlet property="cancel" destination="VEt-93-5Go" id="Hue-Eo-Nnv"/>
+                <outlet property="shadowButton" destination="Anh-Ok-mPR" id="JC6-jL-KJw"/>
+                <outlet property="shadowView" destination="liM-hn-bp5" id="AHz-qv-XMN"/>
+                <outlet property="submit" destination="3Zr-1I-E47" id="0C8-Ko-mHt"/>
+                <outlet property="textView" destination="uvF-hJ-8td" id="3Ng-7K-V7f"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Wxn-PV-ETF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrD-Wb-F8X">
+                    <rect key="frame" x="10" y="10" width="394" height="220"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip1-Sb-P0A" customClass="ShadowCustomView" customModule="My_Wall" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uvF-hJ-8td">
+                                    <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="92n-Vj-mjh"/>
+                                <constraint firstItem="uvF-hJ-8td" firstAttribute="leading" secondItem="ip1-Sb-P0A" secondAttribute="leading" id="D9T-1V-zVy"/>
+                                <constraint firstAttribute="trailing" secondItem="uvF-hJ-8td" secondAttribute="trailing" id="QjZ-ic-B1B"/>
+                                <constraint firstItem="uvF-hJ-8td" firstAttribute="top" secondItem="ip1-Sb-P0A" secondAttribute="top" id="pTj-Jq-Oz8"/>
+                                <constraint firstAttribute="bottom" secondItem="uvF-hJ-8td" secondAttribute="bottom" id="zqX-lw-vt6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liM-hn-bp5" customClass="ShadowCustomView" customModule="My_Wall" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="110" width="394" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anh-Ok-mPR" customClass="DataButton" customModule="My_Wall" customModuleProvider="target">
+                                    <rect key="frame" x="5" y="5" width="384" height="40"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Anh-Ok-mPR" firstAttribute="leading" secondItem="liM-hn-bp5" secondAttribute="leading" constant="5" id="04l-KE-jcg"/>
+                                <constraint firstAttribute="height" constant="50" id="6xt-QQ-69o"/>
+                                <constraint firstAttribute="bottom" secondItem="Anh-Ok-mPR" secondAttribute="bottom" constant="5" id="lYW-6D-hTk"/>
+                                <constraint firstItem="Anh-Ok-mPR" firstAttribute="top" secondItem="liM-hn-bp5" secondAttribute="top" constant="5" id="mgQ-Ms-ugF"/>
+                                <constraint firstAttribute="trailing" secondItem="Anh-Ok-mPR" secondAttribute="trailing" constant="5" id="sKI-4n-YlQ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOW-px-AL1">
+                            <rect key="frame" x="0.0" y="175" width="394" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zd8-yd-2wj">
+                                    <rect key="frame" x="50" y="0.0" width="294" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEt-93-5Go" customClass="CustomButton" customModule="My_Wall" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="137" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                            <state key="normal" title="CANCEL"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="customBGColor">
+                                                    <color key="value" red="0.1529411765" green="0.1960784314" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zr-1I-E47" customClass="CustomButton" customModule="My_Wall" customModuleProvider="target">
+                                            <rect key="frame" x="157" y="0.0" width="137" height="50"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <state key="normal" title="UPDATE"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="customBGColor">
+                                                    <color key="value" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Zd8-yd-2wj" secondAttribute="bottom" id="Qqn-cS-jIS"/>
+                                <constraint firstItem="Zd8-yd-2wj" firstAttribute="top" secondItem="yOW-px-AL1" secondAttribute="top" id="SM5-8r-QuT"/>
+                                <constraint firstItem="Zd8-yd-2wj" firstAttribute="leading" secondItem="yOW-px-AL1" secondAttribute="leading" constant="50" id="lh2-CP-WgS"/>
+                                <constraint firstAttribute="height" constant="50" id="xNh-oz-Aq0"/>
+                                <constraint firstAttribute="trailing" secondItem="Zd8-yd-2wj" secondAttribute="trailing" constant="50" id="yqY-kP-QbB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="liM-hn-bp5" firstAttribute="top" secondItem="ip1-Sb-P0A" secondAttribute="bottom" constant="10" id="2eL-Ov-L2c"/>
+                        <constraint firstAttribute="trailing" secondItem="ip1-Sb-P0A" secondAttribute="trailing" id="FAH-ur-ot7"/>
+                        <constraint firstAttribute="trailing" secondItem="liM-hn-bp5" secondAttribute="trailing" id="Fyf-dR-EpB"/>
+                        <constraint firstItem="ip1-Sb-P0A" firstAttribute="top" secondItem="OrD-Wb-F8X" secondAttribute="top" id="JKM-4B-b8P"/>
+                        <constraint firstItem="yOW-px-AL1" firstAttribute="top" secondItem="liM-hn-bp5" secondAttribute="bottom" constant="15" id="aLo-1W-CxH"/>
+                        <constraint firstItem="ip1-Sb-P0A" firstAttribute="leading" secondItem="OrD-Wb-F8X" secondAttribute="leading" id="k9O-2J-9a9"/>
+                        <constraint firstItem="liM-hn-bp5" firstAttribute="leading" secondItem="OrD-Wb-F8X" secondAttribute="leading" id="vDR-q8-DWx"/>
+                        <constraint firstItem="yOW-px-AL1" firstAttribute="leading" secondItem="OrD-Wb-F8X" secondAttribute="leading" id="zRx-QN-hQl"/>
+                        <constraint firstAttribute="trailing" secondItem="yOW-px-AL1" secondAttribute="trailing" id="zaB-37-HFf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OrD-Wb-F8X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="TEN-ev-4fJ"/>
+                <constraint firstAttribute="trailing" secondItem="OrD-Wb-F8X" secondAttribute="trailing" constant="10" id="aLv-F2-ySM"/>
+                <constraint firstAttribute="bottom" secondItem="OrD-Wb-F8X" secondAttribute="bottom" constant="10" id="dnn-nA-U5v"/>
+                <constraint firstItem="OrD-Wb-F8X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="qbN-yU-aoU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="118.84057971014494" y="88.392857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="3Zr-1I-E47">
+            <size key="intrinsicContentSize" width="60" height="18"/>
+        </designable>
+        <designable name="VEt-93-5Go">
+            <size key="intrinsicContentSize" width="63" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

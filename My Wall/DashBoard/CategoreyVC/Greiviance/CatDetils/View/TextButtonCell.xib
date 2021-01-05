@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextButtonCell" rowHeight="44" id="KGk-i7-Jjw" customClass="TextButtonCell" customModule="My_Wall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Sq-3B-cE5">
+                        <rect key="frame" x="10" y="10" width="300" height="140"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yr-Fg-T0U" customClass="ShadowCustomView" customModule="My_Wall" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="77"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NzO-rY-gKr">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="77"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="NzO-rY-gKr" firstAttribute="top" secondItem="7yr-Fg-T0U" secondAttribute="top" id="Afv-VS-X1G"/>
+                                    <constraint firstItem="NzO-rY-gKr" firstAttribute="centerX" secondItem="7yr-Fg-T0U" secondAttribute="centerX" id="Ir2-7q-qk8"/>
+                                    <constraint firstItem="NzO-rY-gKr" firstAttribute="centerY" secondItem="7yr-Fg-T0U" secondAttribute="centerY" id="aYM-TG-cHV"/>
+                                    <constraint firstAttribute="bottom" secondItem="NzO-rY-gKr" secondAttribute="bottom" id="eVI-f4-NVv"/>
+                                    <constraint firstItem="NzO-rY-gKr" firstAttribute="leading" secondItem="7yr-Fg-T0U" secondAttribute="leading" id="gdm-fW-OgD"/>
+                                    <constraint firstAttribute="trailing" secondItem="NzO-rY-gKr" secondAttribute="trailing" id="tZy-w4-v0F"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zit-pV-cp0" customClass="ShadowCustomView" customModule="My_Wall" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="87" width="300" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5y8-NL-QaS" customClass="DataButton" customModule="My_Wall" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="0.0" width="290" height="53"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5y8-NL-QaS" firstAttribute="top" secondItem="Zit-pV-cp0" secondAttribute="top" id="Gz5-FY-0Ji"/>
+                                    <constraint firstItem="5y8-NL-QaS" firstAttribute="leading" secondItem="Zit-pV-cp0" secondAttribute="leading" constant="5" id="LLx-Ak-hUd"/>
+                                    <constraint firstAttribute="trailing" secondItem="5y8-NL-QaS" secondAttribute="trailing" constant="5" id="PgB-zb-xXh"/>
+                                    <constraint firstItem="5y8-NL-QaS" firstAttribute="centerX" secondItem="Zit-pV-cp0" secondAttribute="centerX" id="kmX-LX-swE"/>
+                                    <constraint firstItem="5y8-NL-QaS" firstAttribute="centerY" secondItem="Zit-pV-cp0" secondAttribute="centerY" id="n2T-dd-MHi"/>
+                                    <constraint firstAttribute="bottom" secondItem="5y8-NL-QaS" secondAttribute="bottom" id="sDC-aa-x72"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Zit-pV-cp0" firstAttribute="height" secondItem="0Sq-3B-cE5" secondAttribute="height" multiplier="0.378571" id="D6O-xi-T37"/>
+                            <constraint firstItem="Zit-pV-cp0" firstAttribute="width" secondItem="0Sq-3B-cE5" secondAttribute="width" id="Sgh-Fl-2Oa"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0Sq-3B-cE5" secondAttribute="trailing" constant="10" id="6De-ev-ZVn"/>
+                    <constraint firstAttribute="bottom" secondItem="0Sq-3B-cE5" secondAttribute="bottom" constant="10" id="9fK-jU-lDl"/>
+                    <constraint firstItem="0Sq-3B-cE5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lCO-xI-HB0"/>
+                    <constraint firstItem="0Sq-3B-cE5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="nBg-0f-Wgk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shadowButton" destination="5y8-NL-QaS" id="KTk-XR-xa8"/>
+                <outlet property="shadowView" destination="Zit-pV-cp0" id="BJJ-bH-5vQ"/>
+                <outlet property="textView" destination="NzO-rY-gKr" id="qGE-y8-60X"/>
+            </connections>
+            <point key="canvasLocation" x="-197.10144927536234" y="88.392857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
